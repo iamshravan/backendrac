@@ -6,19 +6,11 @@ import { SignupModule } from './signup/signup.module'; // Import your SignupModu
 import { Signup } from './signup/entities/signup.entity';
 import { EmployeeModule } from './employee/employee.module';
 import { Employee } from './employee/entities/employee.entity';
+import { dataSourceOptions } from 'db/data-source';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',          // Your MySQL host
-      port: 3306,                 // Default MySQL port
-      username: 'root',           // Replace with your MySQL username
-      password: 'root@123',       // Replace with your MySQL password
-      database: 'rac',            // Your MySQL database name
-      entities: [Signup,Employee],         // Register the Signup entity here
-      synchronize: true,          // Set to true for development; false in production
-    }),
+    TypeOrmModule.forRoot(dataSourceOptions),
     SignupModule,
     EmployeeModule,  // Include the SignupModule here
   ],
