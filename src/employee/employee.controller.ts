@@ -4,7 +4,7 @@ import { EmployeeService } from './employee.service';
 import { EmployeeDto } from './dto/create-employee.dto';
 import { Employee } from './entities/employee.entity';
 
-@Controller('employees')
+@Controller('signup')
 export class EmployeeController {
   constructor(private readonly employeeService: EmployeeService) {}
 

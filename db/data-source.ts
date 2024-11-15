@@ -5,8 +5,8 @@ export const dataSourceOptions: DataSourceOptions = {
   host: 'localhost', // Your MySQL host
   port: 3306, // Default MySQL port
   username: 'root', // Replace with your MySQL username
-  password: 'Root@1234!', // Replace with your MySQL password
-  database: 'rac_db', // Your MySQL database name
+  password: 'root@123', // Replace with your MySQL password
+  database: 'rac', // Your MySQL database name
   entities: ['dist/**/*.entity.js'], // Register the Signup entity here
   //synchronize: true,
   migrations: ['dist/db/migrations/*.js'],

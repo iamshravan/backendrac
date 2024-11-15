@@ -16,7 +16,7 @@ export class EmployeeDto {
 
   @IsOptional()
   @IsString()
-  phone?: string;
+  number?: string;
 
   @IsEnum(['general', 'corporate'])
   user_type: 'general' | 'corporate';

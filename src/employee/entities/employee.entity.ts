@@ -20,7 +20,7 @@ export class Employee {
   email: string;
 
   @Column({ type: 'varchar', length: 20, nullable: true })
-  phone: string;
+  number: string;
 
   @Column({ type: 'enum', enum: ['general', 'corporate'], nullable: true })
   user_type: 'general' | 'corporate';
