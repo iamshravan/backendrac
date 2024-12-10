@@ -6,6 +6,7 @@ import { Employee } from 'src/employee/entities/employee.entity';
 import { Signup } from './entities/signup.entity'; // Update path as necessary
 import * as bcrypt from 'bcrypt';
 import { BadRequestException } from '@nestjs/common';
+import { userInfo } from 'os';
 
 @Injectable()
 export class LoginService {
